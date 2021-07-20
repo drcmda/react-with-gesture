@@ -1,0 +1,74 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+}
+#app {
+  background: gainsboro;
+  display: flex;
+  height: 100%;
+  flex: 1;
+}
+.bounds {
+  margin: auto;
+  flex: 0 1 360px;
+  height: 360px;
+  box-shadow: 0 0 0 1px #dddddd;
+  --grid-line: #dddddd, #dddddd 1px, #dddddd00 1px, #dddddd00 59px, #dddddd 59px, #dddddd 60px;
+  background: repeating-linear-gradient(var(--grid-line)), repeating-linear-gradient(90deg, var(--grid-line)) whitesmoke;
+  display: flex;
+}
+.puck {
+  touch-action: none;
+  background: hotpink;
+  border: 1px solid deeppink;
+  width: 60px;
+  height: 60px;
+  cursor: grab;
+  margin: auto;
+  color: #fff;
+  display: flex;
+}
+.puck:active {
+  cursor: grabbing;
+}
+.puck.active {
+  background: deeppink;
+}
+.puck:before {
+  content: 'drag';
+  margin: auto;
+}
+.puck.active:before {
+  content: 'drop';
+}
+
+.demo-drags {
+  flex: 0;
+  margin: auto auto auto 0;
+}
+.demo-drags\/button-grid {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+  width: 8em;
+  height: 8em;
+}
+.demo-drags\/button-grid > [type='number'] {
+  grid-area: 2/2;
+}
+
+.demo-drags\/timings {
+  display: flex;
+  flex-flow: column;
+}
+.demo-drags\/timings label {
+  font-size: 0.8em;
+  margin: 0.8em 0 0;
+}
+.demo-drags\/timings label > input {
+  margin-top: 0.25em;
+  display: block;
+}

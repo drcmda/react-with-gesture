@@ -1,0 +1,19 @@
+{
+  "name": "vanilla-throw",
+  "version": "1.0.0",
+  "main": "src/index.jsx",
+  "dependencies": {
+    "@use-gesture/vanilla": "latest",
+    "popmotion": "9.4.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.3",
+    "stylefire": "7.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

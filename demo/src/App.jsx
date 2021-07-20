@@ -23,6 +23,7 @@ import CardZoom from './sandboxes/card-zoom/src/App'
 import InfiniteSlideshow from './sandboxes/infinite-slideshow/src/App'
 import ActionSheet from './sandboxes/action-sheet/src/App'
 import DotsConnect from './sandboxes/dots-connect/src/App'
+import VanillaThrow from './sandboxes/vanilla-throw/src/App'
 
 const links = {
   'gesture-simplest': Simplest,
@@ -44,7 +45,8 @@ const links = {
   'card-zoom': CardZoom,
   'infinite-slideshow': InfiniteSlideshow,
   'action-sheet': ActionSheet,
-  'dots-connect': DotsConnect
+  'dots-connect': DotsConnect,
+  'vanilla-throw': VanillaThrow
 }
 
 const Example = ({ link }) => {
